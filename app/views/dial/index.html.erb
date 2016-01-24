@@ -1,0 +1,9 @@
+<h1>PhoneBuzz</h1>
+<br>
+Enter the phone number below
+<br>
+<%= form_tag("/call") do %>
+  <%= telephone_field_tag :number %>
+  <br>
+  <%= submit_tag("Dial") %>
+<% end %>
